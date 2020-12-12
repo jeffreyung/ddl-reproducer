@@ -4,3 +4,4 @@ requirements:
 
 google-cloud-sdk
 bq
+jq
