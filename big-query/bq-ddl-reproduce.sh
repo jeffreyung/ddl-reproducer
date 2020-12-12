@@ -31,7 +31,8 @@ table_type=( $(echo $table_info | jq '.type') )
 col_names=( $(echo $table_info | jq '.schema.fields[].name') )
 col_types=( $(echo $table_info | jq '.schema.fields[].type') )
 col_modes=( $(echo $table_info | jq '.schema.fields[].mode') )
-partitioning_field=$(echo $table_info | jq '.timePartitioning.field')                                                   partitioning_type=$(echo $table_info | jq '.timePartitioning.type')  
+partitioning_field=$(echo $table_info | jq '.timePartitioning.field')
+partitioning_type=$(echo $table_info | jq '.timePartitioning.type')  
 clustering_fields=( $(echo $table_info | jq '.clustering.fields[]') )
 
 # Formatting string to a valid create statement (this will be messy).
