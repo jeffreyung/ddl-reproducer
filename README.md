@@ -1,7 +1,6 @@
 # ddl-reproducer
 
-requirements:
-
-google-cloud-sdk
-bq
-jq
+## Requirements
+* google-cloud-sdk
+* bq
+* jq
